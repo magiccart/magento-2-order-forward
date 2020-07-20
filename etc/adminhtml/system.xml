@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+
+<!-- /**
+ * Magiccart 
+ * @category    Magiccart 
+ * @copyright   Copyright (c) 2014 Magiccart (http://www.magiccart.net/) 
+ * @license     http://www.magiccart.net/license-agreement.html
+ * @Author: DOng NGuyen<nguyen@dvn.com>
+ * @@Create Date: 2018-05-16 18:59:34
+ * @@Modify Date: 2018-06-02 10:33:34
+ * @@Function:
+ */ -->
+ 
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="Magiccart" translate="label" sortOrder="100">
+            <label>Magiccart</label>
+        </tab>
+        <section id="orderforward" translate="label" type="text" sortOrder="300" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Order Forward</label>
+            <tab>Magiccart</tab>
+            <resource>Magiccart_Orderforward::config_orderforward</resource>
+            <group id="general" translate="label" type="text" sortOrder="0" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>General</label>
+                <field id="enabled" translate="label comment" type="select" sortOrder="0"  showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enabled</label>
+                    <comment>Enabled frontend</comment>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="company_id" translate="label comment" type="text" sortOrder="10"  showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Company ID</label>
+                    <comment>Company ID</comment>
+                    <validate>required-entry validate-no-empty</validate>
+                </field>
+                <field id="sender" translate="label comment" type="text" sortOrder="10"  showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Send From Email</label>
+                    <comment>Send From Email</comment>
+                    <validate>required-entry validate-emailSender</validate>
+                </field>
+                <field id="receiver" translate="label comment" type="text" sortOrder="15"  showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Send To Email</label>
+                    <comment>Send To Email</comment>
+                    <validate>required-entry validate-email</validate>
+                </field>
+               <field id="email_template" translate="label comment" type="select" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                   <label>Email Template</label>
+                   <comment>Email Template</comment>
+                   <source_model>Magento\Config\Model\Config\Source\Email\Template</source_model>
+               </field>
+            </group>
+        </section>
+    </system>
+</config>

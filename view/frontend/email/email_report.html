@@ -1,0 +1,30 @@
+
+<!--
+* Magiccart 
+* @category    Magiccart 
+* @copyright   Copyright (c) 2014 Magiccart (http://www.magiccart.net/) 
+* @license     http://www.magiccart.net/license-agreement.html
+* @Author: DOng NGuyen<nguyen@dvn.com>
+* @@Create Date: 2018-05-16 16:15:05
+* @@Modify Date: 2018-06-06 15:32:01
+* @@Function:
+*/
+-->
+<!--@subject Customer Order@-->
+<!--@vars {
+"var data.email":"Sender Email",
+"var data.name":"Sender Name"
+} @-->
+{{template config_path="design/email/header_template"}}
+ 
+<ul>
+   <li>
+       <strong>Customer Details:</strong>
+       <div>
+           <p>{{trans "Name"}}: {{var name}}</p>
+           <p>{{trans "Email"}}: {{var email}}</p>
+       </div>
+   </li>
+</ul>
+ 
+{{template config_path="design/email/footer_template"}}

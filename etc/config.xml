@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!-- /**
+ * Magiccart 
+ * @category    Magiccart 
+ * @copyright   Copyright (c) 2014 Magiccart (http://www.magiccart.net/) 
+ * @license     http://www.magiccart.net/license-agreement.html
+ * @Author: DOng NGuyen<nguyen@dvn.com>
+ * @@Create Date: 2018-05-16 14:59:34
+ * @@Modify Date: 2018-06-02 10:51:36
+ * @@Function:
+ */ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+	<default>
+	    <orderforward>
+            <general>
+                <enabled>1</enabled>
+                <company_id>company_id</company_id>
+                <sender>sale@example.com</sender>
+                <receiver>shiper@example.com</receiver>
+                <email_template>orderforward_general_email_template</email_template>
+            </general>
+	    </orderforward>
+	</default>
+</config>

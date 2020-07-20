@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!-- /**
+ * Magiccart 
+ * @category    Magiccart 
+ * @copyright   Copyright (c) 2014 Magiccart (http://www.magiccart.net/) 
+ * @license     http://www.magiccart.net/license-agreement.html
+ * @Author: DOng NGuyen<nguyen@dvn.com>
+ * @@Create Date: 2018-06-02 10:23:38
+ * @@Modify Date: 2018-06-02 10:36:59
+ * @@Function:
+ */ -->
+ 
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Email:etc/email_templates.xsd">
+   <template id="orderforward_general_email_template" label="Customer Order forward" file="email_report.html" type="html" module="Magiccart_Orderforward" area="frontend"/>
+</config>

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!-- /**
+ * Magiccart 
+ * @category    Magiccart 
+ * @copyright   Copyright (c) 2014 Magiccart (http://www.magiccart.net/) 
+ * @license     http://www.magiccart.net/license-agreement.html
+ * @Author: DOng NGuyen<nguyen@dvn.com>
+ * @@Create Date: 2018-05-16 18:59:34
+ * @@Modify Date: 2018-05-16 19:17:18
+ * @@Function:
+ */ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+  <type name="Magento\Sales\Block\Adminhtml\Order\View">
+    <plugin name="magiccart_orderforward_adminhtml_order_view_add_button" type="Magiccart\Orderforward\Plugin\Sales\Block\Adminhtml\Order\View" sortOrder="10" />
+  </type>
+</config>
